@@ -11,7 +11,7 @@ Workshops may include quizzes to assess your understanding of workshop content. 
 A *description* for the question will be here. Choose your response below and click the check mark on the right to submit your response.
 _Select Choice A for the correct answer below:_
 
-```js|{type:'quiz', quiz_type:'singlechoice', quiz_answers:'1'}
+```js|{type:'quiz', quiz_type:'singlechoice', quiz_answers:'0'}
 - [ ] Choice A
 - [ ] Choice B
 - [ ] Choice C
@@ -27,6 +27,7 @@ _Choices 2 **and** 3 are the correct answers below:_
 - [ ] Choice 2
 - [ ] Choice 3
 ```
+> Note: When reviewing quiz feedback, the first option starts at position 0!
 
 ### Files
 
@@ -50,10 +51,10 @@ Update the print statement below to print `"Hello Docable` (typo included). When
 console.log(  );
 ```
 
-To further verify commands, scripts can have various basic checks to verify your answer and provide feedback. For example, write a script below that prints out `no`:
+To further verify commands, we are able to run some (very basic) checks on the output of your scripts to verify answers and provide feedback. For example, write a JS script below to prints out `no`:
 
-```js|{type:'command', failed_when: "stdout.includes('test')", success_message:"Nice, you figured out this command successfully! :)", failure_message: "Sorry, that output is not what was expected :( You should actually print 'yes'"}
-    console.log( "Hello World" );
+```js|{type:'script', failed_when: "stdout.includes('no')", success_message:"Nice, you figured out this command successfully! :)", failure_message: "Sorry, that output is not what was expected :( You should actually print any other string that does not include the substring"}
+    console.log( "" );
 ```
 
 ### Shell
