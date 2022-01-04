@@ -21,11 +21,13 @@ echo ""
 
 ### Variables
 
-Environment variables can also be set and run for bash commands in Docable. The command exampls below run successfully if you have correctly assigned the variable `foo`. If the variables are not set, you should get an error that the variables have not been provided.
+Environment variables can also be set and run for bash commands in Docable. Remember the text boxes at the top? The command below will run successfully if you have correctly assigned the variables. Try assigning a string value to `foo` and running the first command:
 
 ```bash|{type:'command', variables: 'foo'}
 echo "{{foo}} world"
 ```
+
+If the variables are not set, you should get an error that the values have not been provided. Try running the this command without setting `bar` above:
 
 ```bash|{type:'command', variables: 'bar'}
 echo "hello {{bar}}"
@@ -53,4 +55,4 @@ Docable also provides several types of terminals including bash and zsh as well 
 * The academic integrity policy applies to all workshops. Do not work together unless otherwise specified.
 * Remember, any workshop content (including this one) is eligible to be on the exam.
 
-### [Bash Shells ⏭️](Shells.md)
+### [Programming Languages ⏭️](Coding.md)
