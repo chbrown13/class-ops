@@ -12,11 +12,11 @@ This workshop provides a brief overview of several useful tools and activities f
 > There is no specific language required for this class, but this is a brief overview of a high-level programming language
 
 ## **4. Version Control with Git**
-- A deeper dive into git and interactive tutorial for learning commands
+> A deeper dive into git and interactive tutorial for learning commands
 
 ## **5. Task Management**
-* Useful development tools for productivity and task management
+> Useful development tools for productivity and task management
 
-### [Getting Started ⏭️](Intro.md)
+### [Getting Started ⏭️](Setup.md)
 
 [^1] The content of this workshop is primarily based on the [Engineering Basics](https://github.com/chrisparnin/EngineeringBasics) workshop by [Dr. Chris Parnin](https://chrisparnin.me).
