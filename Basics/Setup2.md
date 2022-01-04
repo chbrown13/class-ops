@@ -7,9 +7,12 @@ Shell _commands_ can also be edited and run directly in Docable. We will primari
 <!-- 
 targets:
     - type: docker
-      name: command-example
+      name: t1
       image: node:12-buster
--->
+    - type: docker
+      name: t2
+      image: node:12-buster
+ -->
 ```bash|{type:'command', shell:'bash'}
 
 ```
@@ -35,7 +38,7 @@ echo "hello {{bar}}"
 
 ### Terminals
 
-Finally, Docable also provides interactive _terminals_ for more extensive tutorial activities. These terminals are also connected to the shell commands and files generated throughout this tutorial. For example, run the command below to write “Hello World!” in /tmp/hello.txt:
+Additionally, Docable also provides full interactive _terminals_ for more extensive tutorial activities. These terminals are also connected to the shell commands and files generated throughout this tutorial. For example, run the command below to write “Hello World!” in /tmp/hello.txt:
 
 
 ```|{type:'command'}
@@ -48,6 +51,23 @@ Then in the terminal below, type `cat /tmp/hello.txt` to check the result of com
 ```
 
 Docable also provides several types of terminals including bash and zsh as well as Evaluate, Print, Loop (REPL) terminals for other programming languages such as node, python, Ruby (irb), and Java (JShell).
+
+### Multi-target Terminals
+
+When working on tutorials with multiple terminals, be careful to observe which commands are run in which target terminal. For example, run the command below will to create a the file `target_test.txt` in terminal **t2**:
+
+```bash|{type:'command', target: 't2'}
+touch target_test.txt
+```
+
+In the terminal below, run the `ls` command to list all of the files in the current directory. You should see that there is no `target_test.txt` present in **t1**:
+
+```bash|{type:'repl', target: 't1', 'background-color': '#00345c'}
+```
+
+However, when you run the `ls` command in the second terminal, you can find the target test file is available on the system:
+```bash|{type:'repl', target: 't2', 'background-color': '#013d17'}
+```
 
 ## Final Thoughts on Workshops
 

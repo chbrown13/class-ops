@@ -26,6 +26,9 @@ console.log( "hello world!" );
 print("hello world!");
 ```
 
+```ruby |{type:'script'}
+print 'hello world!'
+```
 ```java |{type:'script'}
 class HelloWorld {
     public static void main(String[] args) {
@@ -34,15 +37,11 @@ class HelloWorld {
 }
 ```
 
-```ruby |{type:'script'}
-print 'hello world!'
-```
-
-Complete the basic coding tasks to practice using programming concepts in different languages:
+Complete the following basic coding tasks to practice using programming concepts in different languages:
 
 
 ```python | {type: 'script', failed_when: "stdout.includes('0\n')", success_message:"Nice, you run this command successfully!", failure_message: "Try again"}
 
 ```
 
-#### [**Bash Shells** ⏭️ ](Shells.md)
+### [**Bash Shells** ⏭️ ](Shells.md)
