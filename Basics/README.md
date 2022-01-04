@@ -8,10 +8,11 @@ This workshop provides a brief overview of several tools and activities necessar
     > Basic overview of unix shells, shell programming, and windows shell tips.
 3. [Programming Languages](Programming.md)
     > There is no specific language required for this class, however this section is a brief tutorial of a high-level programming language.
-4. [Version Control with Git](Git.md#git)
+4. [Version Control with Git](Git.md)
     > Basic overview of for learning git commands.
-5. [Task Management](Task.md)
+5. [Task Management](Tasks.md)
     > Tools for tracking task management
 
+## ➡️ [**_Getting Started_**](Setup.md)
 
 > _The content of this workshop is based on the [Engineering Basics](https://github.com/chrisparnin/EngineeringBasics) workshop by Dr. Chris Parnin._
