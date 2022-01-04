@@ -16,6 +16,28 @@ Compilation translates the program from one language to another that can be unde
 ### Execution
 The computer or a virtual machine reads and acts on the translated instructions from the written program. When either Compilation or Execution fails, return to Writing to update the source code.
 
+Run the following code snippets to print `hello world!` in various programming languages with Docable:
+
+```js |{type:'script'}
+console.log( "hello world!" );
+```
+
+```python |{type:'script'}
+print("hello world!");
+```
+
+```java |{type:'script'}
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("hello world!");
+    }
+}
+```
+
+```ruby |{type:'script'}
+print 'hello world!'
+```
+
 Complete the basic coding tasks to practice using programming concepts in different languages:
 
 
