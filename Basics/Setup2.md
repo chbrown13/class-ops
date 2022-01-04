@@ -1,9 +1,3 @@
-> We will revisit this ^ later...
-
-### Shells
-
-Shell _commands_ can also be edited and run directly in Docable. We will primarily be using Bash shells for this course. In the editor below, type `ls` and run the command to see a list of files used in this workshop.
-
 <!-- 
 targets:
     - type: docker
@@ -13,6 +7,13 @@ targets:
       name: t2
       image: node:12-buster
  -->
+ 
+> We will revisit this ^ later...
+
+### Shells
+
+Shell _commands_ can also be edited and run directly in Docable. We will primarily be using Bash shells for this course. In the editor below, type `ls` and run the command to see a list of files used in this workshop.
+
 ```bash|{type:'command', shell:'bash'}
 
 ```
