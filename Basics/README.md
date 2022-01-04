@@ -13,5 +13,5 @@ This workshop provides a brief overview of several tools and activities necessar
 5. [Task Management](Task.md)
     > Tools for tracking task management
 
-    
-> The content of this workshop is based on the [Engineering Basics](https://github.com/chrisparnin/EngineeringBasics) workshop by Dr. Chris Parnin.
+
+> _The content of this workshop is based on the [Engineering Basics](https://github.com/chrisparnin/EngineeringBasics) workshop by Dr. Chris Parnin._
