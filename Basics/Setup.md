@@ -4,11 +4,11 @@ To successfully build software, you need a properly configured environment with 
 
 ### Quizzes
 
-Workshops may include quizzes to assess your understanding of workshop content. Quizzes on Docable will consist of multiple choice questions that will notify you if your answers are correct or provide the right answer otherwise. Check out the examples of quiz formats below with single and multi-choice options.
+Workshops will often include short quizzes to assess your understanding of workshop content. Quizzes on Docable will consist of multiple choice questions that will notify you if your answers are correct or provide the right answer otherwise. Choose your response(s) in the quiz and click the gray check mark (✅) on the right of the panel to submit. Check out examples of quiz format below:
 
 #### Single Choice Question
 
-A *description* for the question will be here. Choose your response below and click the check mark on the right to submit your response.
+A *description* for the question will be here.
 _Select Choice A for the correct answer below:_
 
 ```js|{type:'quiz', quiz_type:'singlechoice', quiz_answers:'0'}
@@ -27,7 +27,8 @@ _Choices 2 **and** 3 are the correct answers below:_
 - [ ] Choice 2
 - [ ] Choice 3
 ```
-> Note: When reviewing quiz feedback, the first option starts at position 0!
+
+> **Note:** When reviewing quiz feedback, the first option starts at position 0!
 
 ### Files
 
@@ -51,7 +52,7 @@ Update the print statement below to print `"Hello Docable` (typo included). When
 console.log(  );
 ```
 
-To further verify commands, we are able to run some (very basic) checks on the output of your scripts to verify answers and provide feedback. For example, write a JS script below to prints out `no`:
+To further verify scripts, we are able to run some (very basic) checks on the output of your scripts to verify answers and provide feedback. For example, write a JS script below to prints out `no`:
 
 ```js|{type:'script', failed_when: "stdout.includes('no')", success_message:"Nice, you figured out this command successfully! :)", failure_message: "Sorry, that output is not what was expected :( You should actually print any other string that does not include the substring 'no'"}
 
