@@ -2,6 +2,32 @@
 
 To successfully build software, you need a properly configured environment with a variety of tools. Unfortunately, creating consist work enviroments for a development team can be difficult and frustrating, especially in a classroom environment, due to various operating systems, personal configurations, coding editor preferences and setups, etc. Thus, for the majority of workshops for CS 5704 this semester we will be using Docable to create a consistent development environment for everyone to complete activities. Below is a brief tutorial on how to use this interactive tutorial system.
 
+### Quizzes
+
+Workshops may include quizzes to assess your understanding of workshop content. Quizzes on Docable will consist of multiple choice questions that will notify you if your answers are correct or provide the right answer otherwise. Check out the examples of quiz formats below with single and multi-choice options.
+
+#### Single Choice Question
+
+A *description* for the question will be here. Choose your response below and click the check mark on the right to submit your response.
+_Select Choice A for the correct answer below:_
+
+```js|{type:'quiz', quiz_type:'singlechoice', quiz_answers:'1'}
+- [ ] Choice A
+- [ ] Choice B
+- [ ] Choice C
+```
+
+#### Multiple Choice Question (Check all that apply)
+
+Another *description* for a question. Try choosing _Choice 2_ and clicking the question mark on the right to see an example of an incorrect answer.
+_Choices 2 **and** 3 are the correct answers below:_
+
+```js|{type:'quiz', quiz_type:'multichoice', quiz_answers: '1,2'}
+- [ ] Choice 1
+- [ ] Choice 2
+- [ ] Choice 3
+```
+
 ### Files
 
 Docable allows users to edit and store _files_. Below is a sample text file. You may edit the contents of a file by clicking in the editor below and typing whatever you want. Try updating the `/tmp/docable.txt` file below. To create or update the file in the interactive tutorial environment, click on the pencil and paper icon (📝) on the right side of the editor (_Make sure not to forget this step, otherwise you may face problems later in tutorials!_). You should see a message that says SUCCESS: Created file successfully.
@@ -24,9 +50,15 @@ Update the print statement below to print `"Hello Docable` (typo included). When
 console.log(  );
 ```
 
+To further verify commands, scripts can have various basic checks to verify your answer and provide feedback. For example, write a script below that prints out `no`:
+
+```js|{type:'command', failed_when: "stdout.includes('test')", success_message:"Nice, you figured out this command successfully! :)", failure_message: "Sorry, that output is not what was expected :( You should actually print 'yes'"}
+    console.log( "Hello World" );
+```
+
 ### Shell
 
-Shell _commands_ can also be edited and run directly in Docable. We will primarily be using Bash shells for this course. In the editor below, type `ls` and run the command to see the list of files for this workshop.
+Shell _commands_ can also be edited and run directly in Docable. We will primarily be using Bash shells for this course. In the editor below, type `pwd` and run the command to see the working directory path for this workshop.
 
 <!-- 
 targets:
@@ -50,5 +82,16 @@ echo "hello {{bar}}"
 
 ### Terminals
 
-Below is a sample text file. You may edit the contents of a file by clicking in the editor below and typing whatever you want. Try updating the `tmp/docable_file` below. To create the file in the interactive tutorial environment, click on the pencil and paper icon (📝) on the right side of the editor. (_When working with files be sure not to forget this step, otherwise it could cause problems later on in tutorials!_)
+Finally, Docable also provides interactive _terminals_ for more extensive tutorial activities. These terminals are also connected to the shell commands and files generated throughout this tutorial. For example, run the command below to write “Hello World!” in /tmp/hello.txt:
 
+
+```|{type:'command'}
+echo "Hello World!" > /tmp/hello.txt
+```
+
+Then in the terminal below, type `cat /tmp/hello.txt` to check the result of command cell above:
+
+```|{type:'terminal'}
+```
+
+Docable also provides several types of terminals, including bash, zsh, and Read, Evaluate, Print, Loop (REPL) terminals for programming languages such as node, python, Ruby (irb), and Java (JShell).
