@@ -51,7 +51,7 @@ Docable also provides several types of terminals including bash and zsh as well 
 
 ## Final Thoughts on Workshops
 
-* To receive credit for completing workshops, you will most likely have to submit screenshots or a pdf of the tutorial (Print > Save As PDF). Each workshop will have specific instructions on what to turn in.
+* To receive credit for completing workshops, you will most likely have to submit screenshots or a pdf of the tutorial (`Print > Save As PDF`). Each workshop will have specific instructions on what to turn in.
 * The academic integrity policy applies to all workshops. Do not work together unless otherwise specified.
 * Remember, any workshop content (including this one) is eligible to be on the exam.
 
