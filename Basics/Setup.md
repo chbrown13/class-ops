@@ -28,10 +28,25 @@ console.log(  );
 
 Shell _commands_ can also be edited and run directly in Docable. We will primarily be using Bash shells for this course. In the editor below, type `ls` and run the command to see the list of files for this workshop.
 
+<!-- 
+targets:
+    - type: docker
+      name: command-example
+      image: node:12-buster
+-->
 ```bash|{type:'command', shell:'bash'}
 
 ```
+**Variables**
+Environment variables can also be set and run for bash commands in Docable. The command exampls below run successfully if you have correctly assigned the variable `foo`. If the variables are not set, you should get an error that the variables have not been provided.
 
+```bash|{type:'command', variables: 'foo'}
+echo "{{foo}} world"
+```
+
+```bash|{type:'command', variables: 'bar'}
+echo "hello {{bar}}"
+```
 
 ### Terminals
 
