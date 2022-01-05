@@ -1,4 +1,3 @@
-```yaml
 <!-- 
 targets:
     - type: docker
@@ -7,8 +6,9 @@ targets:
     - type: docker
       name: t2
       image: node:12-buster
--->
-```
+ -->
+
+
 
 > We will revisit this ^ later...
 
@@ -55,21 +55,44 @@ Then in the terminal below, type `cat /tmp/hello.txt` to check the result of com
 
 Docable also provides several types of terminals including bash and zsh as well as Evaluate, Print, Loop (REPL) terminals for other programming languages such as node, python, Ruby (irb), and Java (JShell).
 
-### Multi-target Terminals
+cells can specify the target they should execute in using a `target` property. For example, if we create a command cell using this markdown below, the command will run in **t2**.
 
-When working on tutorials with multiple terminals, be careful to observe which commands are run in which target terminal. For example, run the command below will to create a the file `target_test.txt` in terminal **t2**:
+    ```bash|{type:'command', target: 't2'}
+    touch /tmp/hello_world
+    ```
+
+You can also see the selected target in the rendered view next to the cell:
 
 ```bash|{type:'command', target: 't2'}
-touch /tmp/target_test.txt
+touch /tmp/hello_world
 ```
 
-In the terminal below, type the `ls \tmp` command in **t1** below and hit Enter to list all of the files in the current directory you should see that there is no `target_test.txt` available:
+
+And if `target` is not specified for a cell in a multi-target notebook, the first target from setup stanza will be used by default:
+
+```bash|{type:'command'}
+ls -al /tmp/hello_world
+```
+
+Now you can run the two Docable cells above ☝. First execute the cell with **t2** target to create a temp file. Then execute the second cell which uses **t1** target by default to confirm this file does not exist (two separate environments).
+
+
+You can also use this `target` property in terminal cells. 
+
+    ```bash|{type:'repl', target: 't1', 'background-color': '#00345c'}
+    ```
+
+Here is a rendered terminal for **t1** target:
+
 ```bash|{type:'repl', target: 't1', 'background-color': '#00345c'}
 ```
 
-However, when you run the `ls \tmp` command in the second terminal, you can find the target test file present on the system:
+and another one for t2 target:
+
 ```bash|{type:'repl', target: 't2', 'background-color': '#013d17'}
 ```
+
+Feel free to play around with these two terminals to confirm they are connected to different targets.
 
 ## Final Thoughts on Workshops
 
