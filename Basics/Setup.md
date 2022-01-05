@@ -4,7 +4,7 @@ To successfully build software, you need a properly configured environment with 
 
 ### Quizzes
 
-Workshops will often include short quizzes to assess your understanding of workshop content. Quizzes on Docable will consist of multiple choice questions that will notify you if your answers are correct or provide the right answer otherwise. Choose your response(s) in the quiz and click the gray check mark (✅) on the right of the panel to submit. Check out examples of quiz format below:
+Workshops will often include short quizzes to assess your understanding of workshop content. Quizzes on Docable will consist of multiple choice questions that will notify you if your answers are correct or provide the right answer otherwise. Choose your response(s) in the quiz and click the gray check mark (✅) on the right of the cell to submit. Check out examples of quiz format below:
 
 #### Single Choice Question
 
@@ -32,7 +32,7 @@ _Choices 2 **and** 3 are the correct answers below:_
 
 ### Files
 
-Docable allows users to edit and store _files_. Below is a sample text file. You may edit the contents of a file by clicking in the editor below and typing whatever you want. Try updating the `/tmp/docable.txt` file below. To create or update the file in the interactive tutorial environment, click on the pencil and paper icon (📝) on the right side of the editor (_Make sure not to forget this step, otherwise you may face problems later in tutorials!_). You should see a message that says SUCCESS: Created file successfully.
+Docable allows users to edit and store _files_. Below is a sample text file. You may edit the contents of a file by clicking in the cell below and typing whatever you want. Try updating the `/tmp/docable.txt` file below. To create or update the file in the interactive tutorial environment, click on the pencil and paper icon (📝) on the right side of the cell (_Make sure not to forget this step, otherwise you may face problems later in tutorials!_). You should see a message that says SUCCESS: Created file successfully.
 
 ```bash|{type:'file',path:'/tmp/docable.txt'}
 
@@ -40,7 +40,7 @@ Docable allows users to edit and store _files_. Below is a sample text file. You
 
 ### Scripts
 
-Similarly, Docable is able to provide simple _scripts_ for you to edit and run blocks of code. To edit, change the content within the text editor. To run, click on the play button icon (▶️) on the right side of the editor. The platform supports scripting in JavaScript, Python, Ruby, and Java. Scripts will be indicated with a '[script:]' and the logo of the script's programming language the left side of the coding editor (i.e. the script below is in JavaScript). Modify the first line of the script below to print out `Hello Docable` on the first line and add a new line to print `Welcome to CS5704!`. Running the script should generate a success message with the output.
+Similarly, Docable is able to provide simple _scripts_ for you to edit and run blocks of code. To edit, change the content within the cell. To run, click on the play button icon (▶️) on the right side of the cell. The platform supports scripting in JavaScript, Python, Ruby, and Java. Scripts will be indicated with a '[script:]' and the logo of the script's programming language the left side of the cell (i.e. the script below is in JavaScript). Modify the first line of the script below to print out `Hello Docable` on the first line and add a new line to print `Welcome to CS5704!`. Running the script should generate a success message with the output.
 
 ```js |{type:'script'}
 console.log( "Hello World" );
