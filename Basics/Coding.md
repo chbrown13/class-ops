@@ -1,6 +1,6 @@
 # Programming Languages
 
-> "You may not get to choose what programming language you use for your project, but it may be the most important choice there is. Programmers have argued about which language is best for as long as there have been programmers. In my experience, it makes a lot less difference than most people think…" - [Greg Wilson](https://buildtogether.tech/tooling/)
+> "You may not get to choose what programming language you use for your project, but it may be the most important choice there is. Programmers have argued about which language is best for as long as there have been programmers. In my experience, it makes a lot less difference than most people think…" - [Greg Wilson](https://buildtogether.tech/tooling/#programming-language)
 
 One of the first things you need to know to be a successful software engineer is a programming language. Learning a coding languages is important, however just as important may be the ability to apply concepts and learn new programming languages on the fly, which is [very difficult to do](http://nischalshrestha.me/docs/cross_language_interference.pdf). In general, no matter what programming language you choose all of coding can be summed up by the process *Write-Compile-Execute*.
 

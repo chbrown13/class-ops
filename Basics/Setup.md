@@ -1,6 +1,14 @@
 # Getting Started
 
-To successfully build software, you need a properly configured environment with a variety of tools. Unfortunately, creating consist work enviroments for a development team can be difficult and frustrating, especially in a classroom environment, due to various operating systems, personal configurations, coding editor preferences and setups, etc. Thus, for the majority of workshops for CS 5704 this semester we will be using Docable to create a consistent development environment for everyone to complete activities. Below is a brief tutorial on how to use this interactive tutorial system.
+To successfully build software, you need a properly configured environment with a variety of tools. Unfortunately, creating consist work enviroments for a development team can be difficult and frustrating, especially in a classroom environment, due to various operating systems, personal configurations, coding editor preferences and setups, etc. Thus, for the majority of technical workshops for CS 5704 this semester we will be using Docable as a consistent virtual work environment built on Docker to create online notebooks for everyone to complete activities. Here is a brief tutorial on how to use this interactive tutorial system.
+
+### Content
+
+Docable notebooks contain items in cells. Cells are able to provide a wide variety of features, as we will see later, including embedded content to provide additional information to users like images, slides, or videos. Check out the demo presentation in the example cell below. To navigate, you may click on the slides themselves or use the menu at the bottom of the cell:
+
+```|{type:'slides'}
+https://docs.google.com/presentation/d/e/2PACX-1vSl94Tz9pRTwp1LTR6ImmHoHqd7kHiresyP-Ytq0HnPdjqdK38MtxMvr4agOykQPqDIQrixKtW27mlT/embed
+```
 
 ### Quizzes
 
