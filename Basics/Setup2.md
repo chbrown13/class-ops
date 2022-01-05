@@ -1,3 +1,4 @@
+```yaml
 <!-- 
 targets:
     - type: docker
@@ -6,8 +7,9 @@ targets:
     - type: docker
       name: t2
       image: node:12-buster
- -->
- 
+-->
+```
+
 > We will revisit this ^ later...
 
 ### Shells
