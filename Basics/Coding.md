@@ -50,7 +50,7 @@ There are 4 components to REPL environments:
     * _Print_ formats and displays the output
     * _Loop_ continues the three previous commands until the REPL is terminated
 
-## Activity
+## 📝 Activity
 
 Below are four REPL environments for different programming languages (Python, JavaScript, Ruby, and Java). Complete the program below in **one** of the terminals below. When you are finished, take a screenshot with the completed code and the output in the REPL you selected. Save with the name "fizzbuzz" as a .jpg, .png, or .pdf file. You can submit one screenshot or two separate for the code and output if they do not fit. If you are not familiar with any of these languages, complete the program in the language of your choice and save it in a source code file (i.e. `file.c` for C programs).
 

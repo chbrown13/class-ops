@@ -11,13 +11,13 @@
 
 ## Understanding Git
 
-What better way to understand git, then check out git itself. This might take a while...
+What better way to understand git than to check out git itself! This might take a while...you may also run this locally on your own machine
 
 ```bash|{type:'command', stream: true, failed_when:'exitCode != 0'}
 git clone https://github.com/git/git
 ```
 
-We'll be working inside the git/ directory set our working state to v2.23.0.
+We'll be working inside the git/ directory set our working state to v2.31.0
 
 ```bash|{type:'command'}
 cd git
@@ -42,8 +42,8 @@ git log -1 --abbrev=40
 We will use the `git cat-file` command to help us search for objects inside the store.
 If we provide git with a partial hash, it will attempt to find a unique match, and if it is unable to, it will provide a list of those that did match.
 
-```bash|{type:'command', path: 'git', block: {word: 'commit', title:'There are actually several types of objects in the data-store. For example, a tree object contains folder contents.', rows: 5}}
-git cat-file -p 5fa0
+```bash|{type:'command', path: 'git'}
+git cat-file -p 8348
 ```
 
 #### Blobs
@@ -51,21 +51,26 @@ git cat-file -p 5fa0
 Let's examine a **blob** object. A blob contains _file contents_. 
 ![img](../resources/imgs/git-blob.png)
 
-```bash|{type:'command', path: 'git', highlight: {word: "Here are the topics that have been cooking", title:"Note: the file name is not part of the object! It is just the text or binary contents."}}
-git cat-file -p 5fa073a885
+```bash|{type:'command', path: 'git'}
+git cat-file -p 83484a
 ```
+
+**📝 Exercise:** Create a text file called `git.txt` to answer some questions throughout this activity. 1) What is the method signature (return type, method name, and parameters) of the last function in this blob?
+
 
 #### Trees
 
 Let's examine a **tree** object. A tree contains _folder contents_. 
 ![img](../resources/imgs/git-tree.png)
 
-```bash|{type:'command', path: 'git', block: {word: 'CodingGuidelines', rows: 8, title: 'A tree can contain blobs and other trees. Notice that RelNotes is another tree with additional folder content.'}}
-git cat-file -p 5fa02bff4e
+```bash|{type:'command', path: 'git'}
+git cat-file -p 83484f
 ```
 Example representation of folder contents contained by a tree: 
 
 ![img](../resources/imgs/git-tree-folder.png)
+
+**📝 Exercise:** 2) What is the output of `git cat-file -p 83484f | tail -4 | head -1`? Briefly explain what this command does.
 
 #### Commits 
 
@@ -83,8 +88,10 @@ Perhaps one of the most important type of object inside the object model is a co
 Let's examine an example commit.
 
 ```bash|{type:'command', path: 'git', highlight: {word: "committer", title: "A committer can differ from an author, for example, a committer may be merging a pull request from another author."}}
-git cat-file -p 5fa00a4dcf
+git cat-file -p 834845
 ```
+
+**📝 Exercise:** 3) What is the commit message submitted with this commit?
 
 We can examine the commit graph (but only the first part!).
 
@@ -94,7 +101,7 @@ PAGER='head -n 80' git log --graph --oneline
 
 #### Diffs
 
-Diffs are not part of the object model!
+Diffs are _not_ part of the object model!
 
 > **Commits are NOT diffs**
 
@@ -103,20 +110,25 @@ Instead, diffs are dynamically calculated from the commit graph inside the objec
 Let's examine a diff.
 
 ```bash|{type:'command', path: 'git'}
-git diff --raw v2.22.0 v2.23.0
+git diff --raw v2.31.0 v2.31.1
 ```
 
-#### Merkle Trees
+To get a closer look at specific changes, use:
 
-To enable efficient representation and fast computations of git operations, _merkle trees_ provide forward references within the graph to blobs.
+```bash|{type:'command', path: 'git'}
+git diff v2.31.0 v2.31.1
+```
 
-![merkle-tree](../resources/imgs/git-merkle-tree.png)
+**📝 Exercise:** 4) What is the name of the first file listed that changed between versions 2.31.0 and 2.31.1?
+
 
 ### Branches
 
 _Branches_ are simply pointers to commits. _Tags_ are pointers to anything (commits, trees, blobs).
 
 ![git-branches](../resources/imgs/git-branches.png)
+
+Use `git branch` to see the current branch and `git branch -a` to view a list of branches for the project.
 
 #### Move between branches with git switch
 
@@ -127,13 +139,13 @@ _Branches_ are simply pointers to commits. _Tags_ are pointers to anything (comm
 
 We can switch our branch to the maintenance branch.
 ```bash|{type:'command', path: 'git'}
-git switch maint
+git switch todo
 ```
 
 Let's confirm.
 
 ```bash|{type:'command', path: 'git'}
-git status
+git status ; git branch
 ```
 
 We can return to the main branch.
@@ -142,7 +154,7 @@ We can return to the main branch.
 git switch master
 ```
 
-## Activity: Creating a Repo
+## 📝 Activity: Creating a Repo
 
 Let's try the basics. A repository (repo) is where the backup (master) copies of all files are stored.
 – **Local repository:** on your computer
@@ -187,7 +199,7 @@ We will commit our staged changes into the repository.
 git commit -m "initial commit"
 ```
 
-Nice work!
+**Nice work! We will revisit this later...**
 
 ### Stage, unstage, and discard changes
 
@@ -195,10 +207,7 @@ Changes flow from our working tree, to staging index, and into repository.
 
 ![git-staging](../resources/imgs/git-staging.png)
 
-
-## Activity 
-
-Use the following sets of steps to bserve what happens to the _working tree_ and _index_, by running the `git status` command:
+Use the following sets of steps to observe what happens to the _working tree_ and _index_, by running the `git status` command:
 
 Update the README.md and stage our change.
 
@@ -239,7 +248,9 @@ While having a local git repository is cool, we should connect it to another rem
 * Get new data and merge into working tree: `git pull <remote> <refspec>`
 
 
-## Activity: Let's create a remote repo!
+## 📝 Activity: Let's create a remote repo!
+
+Now let's push the local repository you created earlier to make it a remote repository! This will allow others on your team to access and make changes to the project.
 
 1. Create a new _private_ repository on GitHub (https://github.com account is needed). Name your repository Basics and set a description to be something about "CS5704 Software Engineering Basics Workshop". Skip the initialization steps and create your repo.
 
@@ -257,15 +268,7 @@ git pull
 
 6. Invite the instructor (chbrown13) and TA (TBD) to be collaborators to your repository (`Settings -> Manage access`).
 
-This repository is where you will place all the materials from the workshop today. In the highest-level folder, upload your FizzBuzz program screenshot(s) and `workshop.sh` bash script files from the previous notebooks.
+**7.** This repository is where you will place all the materials from the workshop today. Add your FizzBuzz program screenshots, `workshop.sh` bash script, and `git.txt` from the previous notebooks.
 
 
-## Git Branching Playground
-
-Manipulating the commit graph can get quite complicated! This interactive visualization is very useful for getting a deeper understanding of how operations such as branches, merges, cherry-picking, and more work!
-
-We will solve the "Introduction Sequence" levels in:  
-http://pcottle.github.io/learnGitBranching/   
-
-![example](https://cloud.githubusercontent.com/assets/742934/9494425/c4dd4b66-4bd3-11e5-9aac-04bfc8fed771.png)
-
+### [Task Management ⏭️](Tasks.md)

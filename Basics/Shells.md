@@ -88,6 +88,7 @@ Pipes and redirects change stdin and stdout from default sources. For example, w
 command              # default standard in and standard out
 command < inputFile  # redirect of inputFile contents to command as standard in
 command > outputFile # redirect command output to outputFile as standard out
+command >> outputFile # append the command output to the existing outputFile
 command1 | command2  # pipes output of command1 as standard in to command2
 ```
 
@@ -95,6 +96,10 @@ Try the following scripts below to see some brief examples:
 
 ```bash|{type: 'command'}
 pwd > path.txt && cat path.txt
+```
+
+```bash|{type: 'command'}
+ls >> path.txt && cat path.txt
 ```
 
 ```bash|{type: 'command'}
@@ -174,8 +179,8 @@ $e
 echo "result is: $e"
 ```
 
-## Activity
+## 📝 Activity
 
 > TODO: Basic script for an SE-related problem using Bash
 
-#### [**Version Control with Git** ⏭️ ](Git.md)
+### [**Version Control with Git** ⏭️ ](Git.md)
