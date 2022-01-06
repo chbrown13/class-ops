@@ -144,16 +144,21 @@ $e
 echo "result is: $e"
 ```
 
-Bash scripts are usually created with a `#!/bin/bash` header at the top of the file and a `.sh` file extension. Below is an example of a bash script to print out "Hello World":
+Bash scripts are usually created with a `#!/bin/bash` header at the top of the file and a `.sh` file extension. For example, modify the file below to print out "Hello World":
 
 ```bash|{type:'file',path:'hello.sh'}
 #!/bin/bash
-echo "Hello World!"
+
+echo ""
+
+# Don't forget to save on the right!
 ```
 
-To run a bash script, you can use:
-`$ bash hello.sh`
-or
+To execute a bash script, you can run:
+```bash
+$ bash hello.sh
+```
+or make the file an executable by using:
 ```bash
 $ chmod a+x hello.sh
 $ ./hello.sh
