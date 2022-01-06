@@ -51,11 +51,7 @@ mkdir test ; ls test
 ```
 
 ```bash|{type: 'command'}
-touch shells-test.txt && cat shells-test.txt
-```
-
-```bash|{type: 'command'}
-cp shells-test.txt test/ && ls test
+touch shells-test.txt && cat shells-test.txt && cp shells-test.txt test/ && ls test
 ```
 
 Now, try using the `||` operator. 

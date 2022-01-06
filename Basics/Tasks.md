@@ -13,6 +13,7 @@ In software engineering work, there are often many intangible sets of things _to
 Popular issue tracking systems such as Bugzilla and JIRA originated as a bug reporting tools. A project hosted on GitHub comes with an issue tracker too. Anyone can report an issue, add labels, and any team member(s) can be assigned to an issue. Nowadays, developers also use issues as a lightweight task management tool. For this usecase, it best works for smaller projects.
 
 See open issues: https://github.com/ottomatica/docable-notebooks/issues
+
 See closed issues: https://github.com/ottomatica/docable-notebooks/issues?q=is%3Aissue+is%3Aclosed
 
 Features:
