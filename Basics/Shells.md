@@ -24,6 +24,7 @@ Bash (Bourne Again Shell) is a Unix shell command language that replaced the pre
 * **`cp`**: copy files
 * **`rm`**: remove files
 * **`touch`**: make a new empty file/update status
+* **`echo`**: print out standard output
 * **`cat`**: output the contents of a file
 * **`head`**: output the first lines of a file
 * **`tail`**: output the last lines of a file
@@ -107,5 +108,60 @@ grep "o" < shells-test.txt
 ```bash|{type: 'command'}
 echo "testing" | grep "o"
 ```
+
+## Advanced: Shell Programming
+
+Once you have a set of commands or steps you perform frequently enough, you might find it useful to put into a bash script, including:
+
+* Data collection scripts for mining data; data processing and cleaning scripts.
+* Set up a local server, vms or containers, or anything else needed to test or run a complex application.
+* Provision and deploy an application on a remote server.
+
+While you do these all in the context of a interactive shell, some of the following are particular useful for writing multiple lines of scripts.
+
+Useful conditionals and loops:
+
+```bash
+if command; then
+   commands
+fi
+
+# This is a Bash comment.
+
+[ -z "$var" ] && echo "var is undefined" || echo "var is defined"
+
+while command; do
+  commands
+done
+```
+
+Storing variables and results of commands; referencing variables
+
+```bash
+e=expansion
+e=$(command)
+$e
+echo "result is: $e"
+```
+
+Bash scripts are usually created with a `#!/bin/bash` header at the top of the file and a `.sh` file extension. Below is an example of a bash script to print out "Hello World":
+
+```bash|{type:'file',path:'hello.sh'}
+#!/bin/bash
+echo "Hello World!"
+```
+
+To run a bash script, you can use:
+`$ bash hello.sh`
+or
+```bash
+$ chmod a+x hello.sh
+$ ./hello.sh
+```
+
+Try it out in the terminal below:
+```|{type:'terminal'}
+```
+
 
 #### [**Version Control with Git** ⏭️ ](Git.md)
