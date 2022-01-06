@@ -119,30 +119,44 @@ Once you have a set of commands or steps you perform frequently enough, you migh
 
 While you do these all in the context of a interactive shell, some of the following are particular useful for writing multiple lines of scripts.
 
-Useful conditionals and loops:
+Useful shell programming concepts:
 
 ```bash
+# This is a Bash comment.
+
+# If statement
 if command; then
    commands
 fi
 
-# This is a Bash comment.
-
+# Error handling
 [ -z "$var" ] && echo "var is undefined" || echo "var is defined"
 
+# While loop
 while command; do
   commands
 done
-```
 
-Storing variables and results of commands; referencing variables
+# For loop
+for (( i=10; i>0; i-- ))
+do
+    # Prints numbers counting down from 10
+    echo "$i"
+done
 
-```bash
-e=expansion
+# Input/Output
+read name # Get user input
+echo "Hello $name!"
+echo $1 # First command-line argument
+echo $2 # Second command-line argument...
+
+# Variables (storing values, results of commands, and referencing)
+e=100
 e=$(command)
 $e
 echo "result is: $e"
 ```
+
 
 Bash scripts are usually created with a `#!/bin/bash` header at the top of the file and a `.sh` file extension. For example, modify the file below to print out "Hello World":
 
@@ -156,13 +170,14 @@ echo ""
 
 To execute a bash script, you can run:
 ```bash|{type:'command'}
-$ bash hello.sh
+bash hello.sh
 ```
-or make the file an executable by using:
+or change the mode of the file to be an executable using `chmod` and run with `./`:
 ```bash|{type:'command'}
-$ chmod a+x hello.sh
-$ ./hello.sh
+$ chmod a+x hello.sh ; ./hello.sh
 ```
+
+## Activity
 
 
 
