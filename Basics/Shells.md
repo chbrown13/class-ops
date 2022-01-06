@@ -22,8 +22,8 @@ Bash (Bourne Again Shell) is a Unix shell command language that replaced the pre
 * **`mkdir`**: make a new directory.
 * **`pwd`**: output current directory
 * **`cp`**: copy files
-* **`rm`**: rm files
-* **`touch`**: make a new file/update status
+* **`rm`**: remove files
+* **`touch`**: make a new empty file/update status
 * **`cat`**: output the contents of a file
 * **`head`**: output the first lines of a file
 * **`tail`**: output the last lines of a file
@@ -46,7 +46,15 @@ command1 && command2  # do command2 only if command1 succeeds
 Try running this command that combines these shell commands.
 
 ```bash|{type: 'command'}
-echo "Hello World" > shells-test.txt && cat shells-test.txt
+mkdir test ; ls test
+```
+
+```bash|{type: 'command'}
+touch shells-test.txt && cat shells-test.txt
+```
+
+```bash|{type: 'command'}
+cp shells-test.txt test/ && ls test
 ```
 
 Now, try using the `||` operator. 
@@ -59,6 +67,10 @@ See what happens in this case.
 
 ```bash|{type: 'command', failed_when: "!stdout.includes('backup plan')"}
 cat filedoesnotexist.txt || echo "backup plan"
+```
+
+```bash|{type: 'command', failed_when: "!stdout.includes('backup plan')"}
+cat filedoesnotexist.txt && echo "backup plan"
 ```
 
 ##### Command I/O
@@ -77,4 +89,23 @@ command < inputFile  # redirect of inputFile contents to command as standard in
 command > outputFile # redirect command output to outputFile as standard out
 command1 | command2  # pipes output of command1 as standard in to command2
 ```
+
+Try the following scripts below to see some brief examples:
+
+```bash|{type: 'command'}
+pwd > path.txt && cat path.txt
+```
+
+```bash|{type: 'command'}
+echo "Hello World" > shells-test.txt && cat shells-test.txt
+```
+
+```bash|{type: 'command'}
+grep "o" < shells-test.txt 
+```
+
+```bash|{type: 'command'}
+echo "testing" | grep "o"
+```
+
 #### [**Version Control with Git** ⏭️ ](Git.md)

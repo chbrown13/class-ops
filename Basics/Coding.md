@@ -39,7 +39,7 @@ Compilation translates the program from one language to another that can be unde
 ### Execution
 The computer or a virtual machine reads and acts on the translated instructions from the written program. When either Compilation or Execution fails, return to Writing to update the source code.
 
-## Shell Programming
+## REPL
 
 A **Read-Eval-Print Loop (REPL)** is an interactive interpreter for programming languages. This concept originated with LISP, but many other languages today (Python, Ruby, JavaScript, Haskell, etc.) use REPL's to provide interactive programming language environments that bypass the compile stage of the write-compile-execute cycle. REPLs are useful for simple experimentation and developing quick functions with languages.
 
@@ -56,7 +56,7 @@ Below are four REPL environments for different programming languages (Python, Ja
 
 > **Fizz Buzz**
 > 
-> Fizz buzz is a classic [children's game](https://en.wikipedia.org/wiki/Fizz_buzz) and [programming challenge](https://leetcode.com/problems/fizz-buzz/). Write a program that prints each number from 1 to 20. If the number is divisible by 3, print `Fizz` instead. If the number is divisible by 5, print `Buzz` instead. And if the number is divisible by 3 and 5, then print `FizzBuzz`. This is a simple activity to practice shell programming- you are not expected to come up with the most efficient solution and you will not be graded on correctness. Your program must at least contain some type of loop structure, conditional statements, and print statements.
+> Fizz buzz is a classic [children's game](https://en.wikipedia.org/wiki/Fizz_buzz) and [programming challenge](https://leetcode.com/problems/fizz-buzz/). Write a program that prints each number from 1 to 20. If the number is divisible by 3, print `Fizz` instead. If the number is divisible by 5, print `Buzz` instead. And if the number is divisible by 3 and 5, then print `FizzBuzz`. This is a simple activity to practice REPL programming, not an interview. You are not expected to come up with the most efficient solution. Your program must at least contain some type of loop structure, conditional statements, and print statements.
 
 **JavaScript (node)**
 ```|{type:'terminal', command: 'node'}
