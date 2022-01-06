@@ -117,9 +117,26 @@ Once you have a set of commands or steps you perform frequently enough, you migh
 * Set up a local server, vms or containers, or anything else needed to test or run a complex application.
 * Provision and deploy an application on a remote server.
 
-While you do these all in the context of a interactive shell, some of the following are particular useful for writing multiple lines of scripts.
+While you do these all in the context of a interactive shell, some of the following are particular useful for writing multiple lines of scripts. Bash scripts are usually created with a `#!/bin/bash` header at the top of the file and a `.sh` file extension. For example, modify the file below to print out "Hello World":
 
-Useful shell programming concepts:
+```bash|{type:'file',path:'hello.sh'}
+#!/bin/bash
+
+echo ""
+
+# Don't forget to save me on the right!
+```
+
+To execute a bash script, you can run:
+```bash|{type:'command'}
+bash hello.sh
+```
+or change the mode of the file to be an executable using `chmod` and run with `./`:
+```bash|{type:'command'}
+$ chmod a+x hello.sh ; ./hello.sh
+```
+
+Here are some other useful shell programming concepts:
 
 ```bash
 # This is a Bash comment.
@@ -157,28 +174,8 @@ $e
 echo "result is: $e"
 ```
 
-
-Bash scripts are usually created with a `#!/bin/bash` header at the top of the file and a `.sh` file extension. For example, modify the file below to print out "Hello World":
-
-```bash|{type:'file',path:'hello.sh'}
-#!/bin/bash
-
-echo ""
-
-# Don't forget to save on the right!
-```
-
-To execute a bash script, you can run:
-```bash|{type:'command'}
-bash hello.sh
-```
-or change the mode of the file to be an executable using `chmod` and run with `./`:
-```bash|{type:'command'}
-$ chmod a+x hello.sh ; ./hello.sh
-```
-
 ## Activity
 
-
+> TODO: Basic script for an SE-related problem using Bash
 
 #### [**Version Control with Git** ⏭️ ](Git.md)

@@ -1,25 +1,5 @@
 # Git
 
-## Version Control
-
-Version Control systems keep track of source code over the history of the project.
-* Allows for multiple users
-* Provides mechanisms for checking in conflicting code
-* Stores backups of previous versions
-
-Examples of version control systems: GitHub, GitLab, BitBucket
-
-## Repositories
-
-A **repository** (repo) is where the backup copies of all files are stored.
-– *Local repository*: on your computer
-– *Remote repository*: shared repository in the cloud
-
-A **revision** is a snapshot of a project at one moment in time
-– *commit*: creates a new revision in the local repository
-– *push*: copies the latest local revision to the remote repository
-– *pull*: copies the latest remote revision to the local repository
-
 ![image](https://cloud.githubusercontent.com/assets/742934/15635543/d1044ff6-25ae-11e6-9680-077830cff8f5.png)
 
 ### Why Version Control?
@@ -46,7 +26,7 @@ git reset --hard v2.23.0
 
 ### Git's Object Model: Content-Addressable Data Store.
 
-![git object model](resources/imgs/git-object-model.png)
+![git object model](../resources/imgs/git-object-model.png)
 
 * Every object has a SHA-1 hash: 40 hex characters.
 * Given 40 hex characters, we can find the unique object with that hash.
@@ -69,7 +49,7 @@ git cat-file -p 5fa0
 #### Blobs
 
 Let's examine a **blob** object. A blob contains _file contents_. 
-![img](resources/imgs/git-blob.png)
+![img](../resources/imgs/git-blob.png)
 
 ```bash|{type:'command', path: 'git', highlight: {word: "Here are the topics that have been cooking", title:"Note: the file name is not part of the object! It is just the text or binary contents."}}
 git cat-file -p 5fa073a885
@@ -78,14 +58,14 @@ git cat-file -p 5fa073a885
 #### Trees
 
 Let's examine a **tree** object. A tree contains _folder contents_. 
-![img](resources/imgs/git-tree.png)
+![img](../resources/imgs/git-tree.png)
 
 ```bash|{type:'command', path: 'git', block: {word: 'CodingGuidelines', rows: 8, title: 'A tree can contain blobs and other trees. Notice that RelNotes is another tree with additional folder content.'}}
 git cat-file -p 5fa02bff4e
 ```
 Example representation of folder contents contained by a tree: 
 
-![img](resources/imgs/git-tree-folder.png)
+![img](../resources/imgs/git-tree-folder.png)
 
 #### Commits 
 
@@ -97,7 +77,7 @@ Perhaps one of the most important type of object inside the object model is a co
 * An author name, email, time.
 * A committer name, email, time.
 
-![git commit](resources/imgs/git-commit.png)
+![git commit](../resources/imgs/git-commit.png)
 
 
 Let's examine an example commit.
@@ -130,13 +110,13 @@ git diff --raw v2.22.0 v2.23.0
 
 To enable efficient representation and fast computations of git operations, _merkle trees_ provide forward references within the graph to blobs.
 
-![merkle-tree](resources/imgs/git-merkle-tree.png)
+![merkle-tree](../resources/imgs/git-merkle-tree.png)
 
 ### Branches
 
 _Branches_ are simply pointers to commits. _Tags_ are pointers to anything (commits, trees, blobs).
 
-![git-branches](resources/imgs/git-branches.png)
+![git-branches](../resources/imgs/git-branches.png)
 
 #### Move between branches with git switch
 
@@ -162,15 +142,18 @@ We can return to the main branch.
 git switch master
 ```
 
+## Activity: Creating a Repo
 
-## Practice: Creating a Repo
+Let's try the basics. A repository (repo) is where the backup (master) copies of all files are stored.
+– **Local repository:** on your computer
+– **Remote repository:** shared repository in the cloud
 
-Let's try the basics. Let's create a new local git repository.
+Let's create a new local git repository.
 
 Create a new directory (Basics) and file (README.md).
 
 ```bash|{type:'file', path: 'Basics/README.md'}
-# Project 0
+# CS5704 SE Basics Workshop
 Hello!
 ```
 
@@ -210,10 +193,12 @@ Nice work!
 
 Changes flow from our working tree, to staging index, and into repository.
 
-![git-staging](resources/imgs/git-staging.png)
+![git-staging](../resources/imgs/git-staging.png)
 
 
-**Exercise**: Use the following sets of steps and execute them in any order you wish. Observe what happens to the _working tree_ and _index_, by running the `git status` step.
+## Activity 
+
+Use the following sets of steps to bserve what happens to the _working tree_ and _index_, by running the `git status` command:
 
 Update the README.md and stage our change.
 
@@ -243,9 +228,9 @@ git restore --source=HEAD --staged --worktree README.md
 
 ### Remotes
 
-While having a local git repository is cool, we should connect it to another remote repository. In other words, we have no place to `git push` to...
+While having a local git repository is cool, we should connect it to another remote repository. In other words, **we have no place to `git push` to**...
 
-![git-remote](resources/imgs/git-remote.png)
+![git-remote](../resources/imgs/git-remote.png)
 
 #### Remote operations
 
@@ -253,29 +238,26 @@ While having a local git repository is cool, we should connect it to another rem
 * Upload your data: `git push <remote> <branch>`
 * Get new data and merge into working tree: `git pull <remote> <refspec>`
 
-*Hot Take*: Avoid `git pull` on large repositories! You may want to handle merges yourself into your target branch instead of having git mess with your working tree.
 
-**Exercise**: Let's open a terminal and perform the following steps.
+## Activity: Let's create a remote repo!
 
-Windows:
-```bash|{type:'command', path: 'Basics', platform: 'win32'}
-start bash
-```
+1. Create a new _private_ repository on GitHub (https://github.com account is needed). Name your repository Basics and set a description to be something about "CS5704 Software Engineering Basics Workshop". Skip the initialization steps and create your repo.
 
-Mac/Linux:
-```bash|{type:'command', path: 'Basics'}
-open -a "Terminal" .
-```
-
-1. Create a repo on GitHub (If you are a NCSU student, use GitHub Enterprise: https://github.ncsu.edu). 
-
-2. Follow the instructions on GitHub to add a remote url to an *existing git repository*. Basically, you need to run something like: `git remote add origin https://github.com/<user>/<repo>.git`
+2. Follow the instructions to add a remote url to an existing git repository (**push an existing repository from the command line**). It should start with something like: `git remote add origin https://github.com/<user>/<repo>.git`
 
 3. Push your changes to GitHub. Verify you can see your updated README.md!
 
-4. On GitHub, edit the README.md, to say "Hello GitHub!". Commit the changes on GitHub. Now you have changes in your remote (origin), that are missing on your local copy.
+4. On GitHub, edit the README.md (click on the pencil icon in the top right corner of the file) to say "Hello GitHub!". Commit the changes directly on GitHub. Now you have changes in your remote (origin), that are missing on your local copy.
 
-5. Run `git pull` and verify you now have the updated changes.
+5. Run `git pull` locally to verify you now have the updated changes.
+
+```bash|{type:'command', path: 'Basics'}
+git pull
+```
+
+6. Invite the instructor (chbrown13) and TA (TBD) to be collaborators to your repository (`Settings -> Manage access`).
+
+This repository is where you will place all the materials from the workshop today. In the highest-level folder, upload your FizzBuzz program screenshot(s) and `workshop.sh` bash script files from the previous notebooks.
 
 
 ## Git Branching Playground
@@ -286,32 +268,4 @@ We will solve the "Introduction Sequence" levels in:
 http://pcottle.github.io/learnGitBranching/   
 
 ![example](https://cloud.githubusercontent.com/assets/742934/9494425/c4dd4b66-4bd3-11e5-9aac-04bfc8fed771.png)
-
-
-## Git Configuration and Security
-
-If you want to make sure your commits are properly linked to your GitHub account, make sure you have configured your computer to have your name and email filled out.
-
-```
-$ git config --global user.name "FirstName LastName"
-$ git config --global user.email email@example.com
-```
-
-You might also consider an authenication strategy. If you're being asked to login everytime your pull/push to your remote repository, you might want to enable caching of your credentials. For example, you could use: 
-
-```
-git config --global credential.helper store
-```
-
-However, this may store your credentials in plain text on your computer. There are other platform-specific credential.helpers that you can use to more securely store your credentials. It is also possible to generate [personal access tokens](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) that you can use authenicate instead of a passcode.
-
-An alternative approach is to use sshkeys. In this case, you have a public/private keypair, with the public key stored on GitHub. You then use a [different url pattern](https://help.github.com/articles/which-remote-url-should-i-use/) for your commands such as `git clone`. Instead of the `https://` prefix, you instead use `git@github.com:user/repo.git`.
-
-If you are interested in exploring this option: See these guides on GitHub:
-  * [Generating SSH Key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
-  * [Adding SSH Key to GitHub](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
-  * [Testing SSH Connection](https://help.github.com/articles/testing-your-ssh-connection/)
-
-
-#### [**Task Management** ⏭️ ](Tasks.md)
 
