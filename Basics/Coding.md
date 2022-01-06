@@ -52,24 +52,28 @@ There are 4 components to REPL environments:
 
 ## Activity
 
-Below are four REPL environments for different programming languages (Python, JavaScript, Ruby, and Java). Complete the program below in **one** of the terminals below. When you are finished, take a screenshot with the completed code and the output in the REPL you selected. Save with the name "fizzbuzz" (as a .jpg, .png, or .pdf). You can submit one screenshot or two separate for code (fizzbuzz_code) and output (fizzbuzz_output). If you are not familiar with any of these languages, complete the program in the language of your choice and save it in a source code file (i.e. `file.c` for C programs).
+Below are four REPL environments for different programming languages (Python, JavaScript, Ruby, and Java). Complete the program below in **one** of the terminals below. When you are finished, take a screenshot with the completed code and the output in the REPL you selected. Save with the name "fizzbuzz" as a .jpg, .png, or .pdf file. You can submit one screenshot or two separate for the code and output if they do not fit. If you are not familiar with any of these languages, complete the program in the language of your choice and save it in a source code file (i.e. `file.c` for C programs).
 
 > **Fizz Buzz**
 > 
-> Fizz buzz is a classic [children's game](https://en.wikipedia.org/wiki/Fizz_buzz) and [programming challenge](https://leetcode.com/problems/fizz-buzz/). Write a program that prints each number from 1 to 20 separated by a space. If the number is divisible by 3, print `Fizz` instead. If the number is divisible by 5, print `Buzz` instead. And if the number is divisible by 3 and 5, then print `FizzBuzz`. This is a simple activity to practice shell programming- you are not expected to come up with the most efficient solution and you will not be graded on correctness. Your program must at least contain some type of loop structure, conditional statements, and print statements.
+> Fizz buzz is a classic [children's game](https://en.wikipedia.org/wiki/Fizz_buzz) and [programming challenge](https://leetcode.com/problems/fizz-buzz/). Write a program that prints each number from 1 to 20. If the number is divisible by 3, print `Fizz` instead. If the number is divisible by 5, print `Buzz` instead. And if the number is divisible by 3 and 5, then print `FizzBuzz`. This is a simple activity to practice shell programming- you are not expected to come up with the most efficient solution and you will not be graded on correctness. Your program must at least contain some type of loop structure, conditional statements, and print statements.
 
+**JavaScript (node)**
 ```|{type:'terminal', command: 'node'}
 ```
 
+**Python**
 ```|{type:'terminal', command: 'python'}
 ```
 
+**Ruby**
 ```|{type:'terminal', command: 'irb'}
 ```
 
+**Java (JShell)**
 ```|{type:'terminal', command: 'jshell'}
 ```
 
-* Remember to take your screenshot!
+* Remember to take your screenshot(s)! You will need them later to submit for this workshop.
 
 ### [**Bash Shells** ⏭️ ](Shells.md)

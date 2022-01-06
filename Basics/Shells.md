@@ -1,5 +1,80 @@
-# Bash Shells
+# Shells
 
+A shell is a computing environment where commands can be interpreted, evaluated, and their output displayed. We have already seen a few examples of shells and Unix commands in the introductory tutorial and with REPL programming environments. Shell commands can be difficult to learn, however a good shell provides access to a rich set of commands and allows simple programming of commands, which can be useful for creating powerful scripts and tools to improve your productivity as a software engineer. This tutorial provides a brief overview of bash shells. 
 
+## Shell Basics
 
+Bash (Bourne Again Shell) is a Unix shell command language that replaced the preceding Bourne shell in 1989. It has been the most popular interactive shell and is used as the default shell for most Linux distributions. If you would like to know more information about shells and learn additional commands, check out this thorough tutorial through [Software Carpentry](https://swcarpentry.github.io/shell-novice/index.html) for shell novices, [Command Line Fu](https://www.commandlinefu.com/commands/browse) or the [Unix Workbench](https://seankross.com/the-unix-workbench/) book. To access shells on your own:
+
+* Linux: you already have a shell!
+* Mac: you can run the Terminal in Applications and pin to your Dock.
+* Windows: You access a shell in several ways. You can right click on the Windows Icon in the Task Bar and open a terminal window. You can also type in the name of the shell program in the search bar (e.g., Cmd/Powershell). To get bash on Windows, you will need to install an emulated shell with bash, such as Bash for Git or Windows Linux Subsystem (WSL).
+> Tip: IDES, such as VS Code provide easy access to a terminal (View ⇨ Terminal).
+
+### Commands
+
+99% of the reason you use shells is to run useful commands.
+
+##### Essential commands.
+
+* **`ls`**: list content of a directory.
+* **`cd`**: change directories to a new path.
+* **`mkdir`**: make a new directory.
+* **`pwd`**: output current directory
+* **`cp`**: copy files
+* **`rm`**: rm files
+* **`touch`**: make a new file/update status
+* **`cat`**: output the contents of a file
+* **`head`**: output the first lines of a file
+* **`tail`**: output the last lines of a file
+* **`grep`**: search files for a key phrase
+* **`wget`**: retrieve file from the web
+* **`cut`**: extract output of a file (columns)
+* **`awk`** and **`sed`**: Magic commands for extracting, searching, and transforming content
+
+##### Combining commands
+
+Command can run sequentially or conditionally:
+
+```bash
+command1 ; command2
+(command1 ; command2) # in a sub-shell
+command1 || command2  # do command2 only if command1 fails
+command1 && command2  # do command2 only if command1 succeeds
+```
+
+Try running this command that combines these shell commands.
+
+```bash|{type: 'command'}
+echo "Hello World" > shells-test.txt && cat shells-test.txt
+```
+
+Now, try using the `||` operator. 
+
+```bash|{type: 'command', }
+cat shells-test.txt || echo "backup plan"
+```
+
+See what happens in this case.
+
+```bash|{type: 'command', failed_when: "!stdout.includes('backup plan')"}
+cat filedoesnotexist.txt || echo "backup plan"
+```
+
+##### Command I/O
+
+The UNIX shell commands push data from sources through filters along pipes. Normally, each command runs as a process and reads and writes data the following way:
+
+* **Standard input (stdin)**: get information from keyboard.
+* **Standard output (stdout)**: write information as output to console.
+* **Standard error (stderr)**: write error information as output to console.
+
+Pipes and redirects change stdin and stdout from default sources. For example, we can change the stdin of a process to be piped from the output of another process. Or rather than printing to the console, we can get a process to write to a file.
+
+```bash
+command              # default standard in and standard out
+command < inputFile  # redirect of inputFile contents to command as standard in
+command > outputFile # redirect command output to outputFile as standard out
+command1 | command2  # pipes output of command1 as standard in to command2
+```
 #### [**Version Control with Git** ⏭️ ](Git.md)
