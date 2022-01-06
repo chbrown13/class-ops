@@ -155,18 +155,15 @@ echo ""
 ```
 
 To execute a bash script, you can run:
-```bash
+```bash|{type:'command'}
 $ bash hello.sh
 ```
 or make the file an executable by using:
-```bash
+```bash|{type:'command'}
 $ chmod a+x hello.sh
 $ ./hello.sh
 ```
 
-Try it out in the terminal below:
-```|{type:'terminal'}
-```
 
 
 #### [**Version Control with Git** ⏭️ ](Git.md)
