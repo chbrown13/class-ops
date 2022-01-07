@@ -134,7 +134,7 @@ bash hello.sh
 ```
 or change the mode of the file to be an executable using `chmod` and run with `./`:
 ```bash|{type:'command'}
-$ chmod a+x hello.sh ; ./hello.sh
+chmod a+x hello.sh ; ./hello.sh
 ```
 
 Here are some other useful shell programming concepts:
