@@ -39,7 +39,7 @@ Tools such as [Trello](https://trello.com/) and [GitHub Projects](https://docs.g
 
 ![image](https://cloud.githubusercontent.com/assets/742934/15635646/cbe2b4fa-25b2-11e6-8dc9-e6cafca6629c.png)
 
-In kanban, you have a “visual” pipeline for transitioning ideas into a delivered product. With these tools, you can move a card (often representing a task) between lists, which are on a single board.
+In kanban, you have a “visual” pipeline for transitioning ideas into a delivered product. With these tools, you can move a card (often representing a task) between lists, which are on a single board. Many options recently, such as [GitHub projects](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-automation-for-project-boards), allow for further customization and automation of task management for projects based on your workflow (i.e. opened and closed issues, pull requests, etc.).
 
 Recommended Pipeline:
 
@@ -60,7 +60,7 @@ Instead of saying "Do analysis" => a more suitable task might be "Find R package
 
 ## 📝 Activity: GitHub Projects
 
-On your SE Basics repository, navigate to the Projects tab to create a GitHub Projects board. Follow the instructions to add a project to your repository and select the "Basic kanban" template option. Once your project board is created, create cards to represent upcoming tasks related to this class (i.e. this workshop, HW0, finding a project group, etc.). Move the tasks to the appropriate column (i.e. this workshop is _In Progress_) and don't forget to update the workshop task to Done whenever you finish!
+On your SE Basics repository, navigate to the Projects tab to create a GitHub Projects board. Follow the instructions to add a project to your repository and select the "Basic kanban" template option(`TODO`, `In Progress`, `Done` columns). Once your project board is created, create cards to represent upcoming tasks related to this class including this workshop, HW0, finding a project group, and any more you can think of. Move the tasks to the appropriate column (i.e. this workshop is _In Progress_). Don't forget to update the workshop task to Done whenever you finish!
 
 ## Scrum
 
