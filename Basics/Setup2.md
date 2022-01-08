@@ -53,7 +53,7 @@ Then in the terminal below, type `cat /tmp/hello.txt` to check the result of com
 ```|{type:'terminal'}
 ```
 
-Docable also provides several types of terminals including bash and zsh as well as Read-Eval-Print Loop (REPL) language shells for programming languages such as JavaScript (node), Python, Ruby (irb), and Java (JShell).
+Docable also provides several types of terminals including bash, zsh, and Windows as well as Read-Eval-Print Loop (REPL) programming language shells for JavaScript (node), Python, Ruby (irb), and Java (JShell).
 
 ### Multiple Targets
 
