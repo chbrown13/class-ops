@@ -21,7 +21,7 @@ We'll be working inside the git/ directory set our working state to v2.31.0
 
 ```bash|{type:'command'}
 cd git
-git reset --hard v2.23.0
+git reset --hard v2.31.0
 ```
 
 ### Git's Object Model: Content-Addressable Data Store.
