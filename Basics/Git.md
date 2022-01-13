@@ -11,9 +11,9 @@
 
 ## Understanding Git
 
-What better way to understand git than to check out git itself! This might take a while...you may also run this locally on your own machine
+What better way to understand git than to check out git itself! This might take a while...(if necessary, try running this locally in Git Bash)
 
-```bash|{type:'command', stream: true, failed_when:'exitCode != 0'}
+```bash|{type:'command', failed_when:'exitCode != 0'}
 git clone https://github.com/git/git
 ```
 
