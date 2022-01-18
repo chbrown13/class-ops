@@ -1,2 +1,2 @@
-# class-ops
-Test repository for Docable and future automated class tools
+# Workshops
+Repository for Docable workshops and other teaching-related activities
