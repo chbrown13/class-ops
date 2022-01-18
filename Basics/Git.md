@@ -266,7 +266,7 @@ Now let's push the local repository you created earlier to make it a remote repo
 git pull
 ```
 
-6. Invite the instructor (chbrown13) and TA (TBD) to be collaborators to your repository (`Settings -> Manage access`).
+6. Invite the instructor (chbrown13) and TA (marnaoty) to be collaborators to your repository (`Settings -> Manage access`).
 
 **7. This repository is where you will place all the materials from the workshop today. Add your FizzBuzz program screenshots, `workshop.sh` bash script, and `git.txt` from the previous notebooks.**
 

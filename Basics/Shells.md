@@ -173,10 +173,28 @@ e=100
 e=$(command)
 $e
 echo "result is: $e"
-```
 
+a=2                   # Integer.
+let "a += 1"
+echo "a = $a "           # a = 3
+echo $a      
+```
+> ⚠️ Warning: In bash there are no types (everything is a character string) and spacing matters!
 ## 📝 Activity
 
-> TODO: Basic script for an SE-related problem using Bash
+> **Automated Test Case Generation**
+> 
+> You work for a company that provides a simple calculator that calculates the area of a circle (`3.14 * r^2`) with a given radius. The product is almost ready to ship, however there are no test case input or expected output files for the unit tests! Write a bash script to automatically generate 10 test case input and output files based on the following criteria:
+> - The input files `test_n.txt`, where _n_ is the given test case number, will have the test input value of _n_ in the text file (i.e. `test_1.txt` will only contain a `1`, `test_2.txt` -> `2`, etc.). 
+> - The corresponding expected output `expected_n.txt` should contain the area of a circle with the given radius _n_ (i.e. `expected_1.txt` -> `3.14`). 
+> 
+> You may test your bash script in the file and terminal below. There are no requirements for rounding your answers and this program will not be graded on correctness, but on effort. When you are finished, save your bash script _locally_ in a file called `workshop.sh`. This will be submitted later.
+
+```bash|{type:'file',path:'workshop.sh'}
+
+```
+
+```|{type:'terminal'}
+```
 
 ### [**Version Control with Git** ⏭️ ](Git.md)
