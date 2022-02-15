@@ -18,7 +18,7 @@ There are generally two flavors of package managers.
 * *Binary* package managers typically install platform specific dependencies: (`brew`, `choco`, `apt-get`) 
 * *Source* package managers typically install libraries you can use in your code: (`npm`, `pip`, `maven`)
 
-Source package managers are useful for installing packages and libraries for specific programming langages. [`npm`](https://www.npmjs.com/) is the default package manager for Node.js and [`pip`](https://pip.pypa.io/en/stable/) for Python.
+Source package managers are useful for installing packages and libraries for specific programming langages. [`npm`](https://www.npmjs.com/) is the default package manager for Node.js and [`pip`](https://pip.pypa.io/en/stable/) for Python. Many package managers also have various options for specifying how to install packages. For example, to globally install a JavaScript package you can use `npm install -g <package-name>` (_You will need this information for later_).
 
 If you do not have a package manager on your laptop, complete the following **_on your own_** personal machine. It will be needed for a future notebook in this workshop.
 
@@ -27,7 +27,11 @@ If you do not have a package manager on your laptop, complete the following **_o
 
 #### Installing on Linux
 
-If you're using Linux, you typically already have a package manager, such as `yum` or `apt-get`. For example, in Docable is based on an Ubuntu docker image, in which you can install packages using `apt-get install <package-name>` (_You will need this information for later_).
+If you're using Linux, you typically already have a package manager, such as `yum` or `apt-get`. For example, on Ubuntu you can install packages using:
+
+`apt-get install <package-name>`
+
+> _You will need this information for later_.
 
 #### Installing HomeBrew on Mac OS X
 
@@ -82,14 +86,22 @@ Some commands, such as installation with package managers, may require adminstra
 
 > _Tip:_ If opening up a cmd shell in admin mode, make sure you do not perform operations, such as `git clone` in your current directory (`C:\WINDOWS\system32`). Otherwise, you will be writing to a location that only admin will have access to which will make it difficult to run the commands/tasks you are intending on doing.
 
-## 📒 Online Exercise: Install the packages!
+## 📒 Online Exercise: Install the packages
 
-Let's practice installing useful software. Using the materials in this notebook, the command-line output, and the package manager documentation, install this missing packages in this environment. Click on the following to start the exercise:
+Let's practice installing useful software!
+
+> _Tips:_
+> * Docable uses a docker image based on Ubuntu 20 
+> * Pay attention to the command output: 
+>   * If you get any error about permissions, try adding `sudo`
+>   * If it says you need to update, then update!
+
+Click on the following image to start the exercise. **_To submit this assignment, take a screenshot of the environment test results in Docable after clicking the CHECK button after completing this activity._**
 
 <a href="https://devops.docable.cloud/chrisparnin/v/61b3ed6a7db4f2fc6edefd59">
-<img src="resources/imgs/install-packages-notebook-preview.png">
+<img src="https://raw.githubusercontent.com/CSC-DevOps/Course/master/Content/Basics/resources/imgs/install-packages-notebook-preview.png">
 </a>
 
-## [Package Managers ⏭️](Install.md)
+## [Metrics ⏭️](Metrics.md)
 
 > The content of this notebook is primarily based on part of the [Engineering Basics](https://github.com/chrisparnin/EngineeringBasics) workshop by [Dr. Chris Parnin](https://chrisparnin.me).
