@@ -12,9 +12,13 @@ This activity will allow you to practice using various tools to calculate variou
 
 To run these tools, simply open a command-line and type:
 
-```cloc <file-name>``` to count the number of lines in a specific file or
+```cloc <file-name>``` 
 
-```sloc .``` to count the number of lines for all of the files in the current directory
+to count the number of lines in a specific file or
+
+```sloc .``` 
+
+to count the number of lines for all of the files in the current directory.
 
 More details are available using `sloc -h` or `cloc -help`.
 
