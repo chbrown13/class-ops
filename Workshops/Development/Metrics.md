@@ -12,16 +12,14 @@ This activity will allow you to practice using various tools to calculate variou
 
 To run these tools, simply open a command-line and type:
 
-```cloc <file-name>``` 
+```cloc <file-name>``` / ```sloc <file-name>``` 
 
 to count the number of lines in a specific file or
 
-```sloc .``` 
+```sloc .``` / ```cloc .``` 
 
 to count the number of lines for all of the files in the current directory.
 
-More details are available using `sloc -h` or `cloc -help`.
-
-Use one of the lines of code counting tool to answer the following questions:
+More details are available using `sloc -h` or `cloc -help`. Use one of the lines of code counting tool to answer the following questions:
 
 1. How many total lines of code are in your pair programming workshop repository?
