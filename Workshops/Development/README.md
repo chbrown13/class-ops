@@ -4,9 +4,9 @@ The development environment workshop provides hands-on experience for students t
 
 ### 📒 Online Exercise
 
-Click [here](https://devops.docable.cloud/dcbrown/v/620bcb2aa42d528cf9714fb3) to visit the test exercise. The activity will open in the same tab, so make sure to navigate back here.
+* Click [here](https://devops.docable.cloud/dcbrown/v/620bcb2aa42d528cf9714fb3) to visit the test exercise. The activity will open in the same tab, so make sure to navigate back here.
 
-The development environment workshop consists of the following activities:
+### The development environment workshop consists of the following activities:
 
 
 ### **1. Pair Programming**
