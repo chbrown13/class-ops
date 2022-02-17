@@ -31,3 +31,8 @@ Use one of the lines of code counting tools above to complete this activity. Sub
 ### 📒 Online Exercise
 
 Click below to check out an activity working with another tool for measuring more advanced code metrics for python.
+
+
+<a href="https://devops.docable.cloud/dcbrown/v/620ec3c6a42d528cf97154a5">
+<img src="resources/imgs/radon-preview.png">
+</a>
