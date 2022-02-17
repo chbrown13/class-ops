@@ -20,7 +20,14 @@ to count the number of lines in a specific file or
 
 to count the number of lines for all of the files in the current directory. More details are available using `sloc -h` or `cloc -help`. 
 
-**Use one of the lines of code counting tool to answer the following questions:**
+## 📝 Activity
 
-1. How many total lines of code are in your pair programming workshop repository?
-2. How many total lines of code are in your course project repository?
+Use one of the lines of code counting tools above to complete this activity. Submit your responses to the following questions with your Homework 3 assignment on Canvas:**
+
+7. How many total lines of source code are in the `Roman.<ext>` file for your pair programming workshop repository (_main branch_)?
+8. How many total lines of comments are in the `Roman.<ext>` file for your pair programming workshop repository (_main branch_)?
+9. How many total lines of code are in the `Roman.<ext>` file for _your branch_ of the pair programming workshop repository?
+
+### 📒 Online Exercise
+
+Click below to check out an activity working with another tool for measuring more advanced code metrics for python.

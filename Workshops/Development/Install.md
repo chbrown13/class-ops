@@ -88,7 +88,7 @@ Some commands, such as installation with package managers, may require adminstra
 
 ## 📒 Online Exercise: Install the packages
 
-Let's practice installing useful software!
+Let's practice installing useful software! **To submit this assignment, take a screenshot of the environment test results in Docable after clicking the CHECK button after completing this activity. _Add this screenshot to <u>your branch</u> of the workshop repository from the previous activity!_**
 
 > _Tips:_
 > * Docable uses a docker image based on Ubuntu 20 
@@ -96,7 +96,7 @@ Let's practice installing useful software!
 >   * If you get any error about permissions, try adding `sudo`
 >   * If it says you need to update, then update!
 
-Click on the following image to start the exercise. **_To submit this assignment, take a screenshot of the environment test results in Docable after clicking the CHECK button after completing this activity._**
+Click on the following image to start the exercise. 
 
 <a href="https://devops.docable.cloud/chrisparnin/v/61b3ed6a7db4f2fc6edefd59">
 <img src="https://raw.githubusercontent.com/CSC-DevOps/Course/master/Content/Basics/resources/imgs/install-packages-notebook-preview.png">

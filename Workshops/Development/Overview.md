@@ -1,5 +1,6 @@
+# Workshop
 
-#### The development environment workshop consists of the following activities:
+The development environment workshop consists of the following activities:
 
 ## **1. Pair Programming**
 > Find a partner to complete a programming task together
