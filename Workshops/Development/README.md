@@ -8,24 +8,7 @@ __Click [here](https://devops.docable.cloud/dcbrown/v/620bcb2aa42d528cf9714fb3) 
 
 
 
-* The development environment workshop consists of the following activities:
-
-### **1. Pair Programming**
-> Find a partner to complete a programming task together
-
-## **2. Branching**
-> Practice creating and merging branches in GitHub
-
-## **3. Package Managers**
-> Setting up your development environment
-
-## **4. Code Metrics**
-> An overview of various development tools to analyze your code
-
-
-## [Pair Programming ⏭️](PairProgramming.md)
-
-
+## [Overview ⏭️](Overview.md)
 
 
 
