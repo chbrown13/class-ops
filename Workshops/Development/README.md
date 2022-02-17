@@ -19,7 +19,7 @@ __Click [here](https://devops.docable.cloud/dcbrown/v/620bcb2aa42d528cf9714fb3) 
 ## **3. Package Managers**
 > Setting up your development environment
 
-## **4. Code Analysis Tools**
+## **4. Code Metrics**
 > An overview of various development tools to analyze your code
 
 ## [Pair Programming ⏭️](PairProgramming.md)
