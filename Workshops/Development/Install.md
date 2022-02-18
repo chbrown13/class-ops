@@ -86,17 +86,20 @@ Some commands, such as installation with package managers, may require adminstra
 
 > _Tip:_ If opening up a cmd shell in admin mode, make sure you do not perform operations, such as `git clone` in your current directory (`C:\WINDOWS\system32`). Otherwise, you will be writing to a location that only admin will have access to which will make it difficult to run the commands/tasks you are intending on doing.
 
+Let's practice installing useful software!
+
 ## 📒 Online Exercise: Install the packages
 
-Let's practice installing useful software! **To submit this assignment, take a screenshot of the environment test results in Docable after clicking the CHECK button after completing this activity. _Add this screenshot to <u>your branch</u> of the workshop repository from the previous activity!_**
+To submit this assignment, **take a screenshot** of the environment test results in Docable after clicking the CHECK button when this activity is completed. _Add this screenshot to the <u>main branch</u> of the PairProgramming repository from the previous activity!_
 
 > _Tips:_
-> * Docable uses a docker image based on Ubuntu 20 
+> * If possible, open the activity below in a new tab to reference this page.
+> * Docable uses a docker image based on Ubuntu 20. 
 > * Pay attention to the command output: 
 >   * If you get any error about permissions, try adding `sudo`
 >   * If it says you need to update, then update!
 
-Click on the following image to start the exercise. 
+**Click on the following image to start the exercise:**
 
 <a href="https://devops.docable.cloud/chrisparnin/v/61b3ed6a7db4f2fc6edefd59">
 <img src="https://raw.githubusercontent.com/CSC-DevOps/Course/master/Content/Basics/resources/imgs/install-packages-notebook-preview.png">
