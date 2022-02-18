@@ -11,13 +11,10 @@ The development environment workshop consists of the following activities:
 ## **3. Package Managers**
 > Setting up your development environment
 
-## **4. Code Metrics**
-> An overview of various development tools to analyze your code
+## **4. Integrated Development Environments**
+> An introduction to environments for writing code
 
-## **5. REST APIs?**
-> 
-
-## **6. Complexity?**
->
+## **5. Code Metrics**
+> An exploration of tools to calculate various analyses of your code
 
 ## [Pair Programming ⏭️](PairProgramming.md)

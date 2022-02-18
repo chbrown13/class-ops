@@ -105,6 +105,6 @@ To submit this assignment, **take a screenshot** of the environment test results
 <img src="https://raw.githubusercontent.com/CSC-DevOps/Course/master/Content/Basics/resources/imgs/install-packages-notebook-preview.png">
 </a>
 
-## [Metrics ⏭️](Metrics.md)
+## [IDEs ⏭️](IDEs.md)
 
 > The content of this notebook is primarily based on part of the [Engineering Basics](https://github.com/chrisparnin/EngineeringBasics) workshop by [Dr. Chris Parnin](https://chrisparnin.me).
