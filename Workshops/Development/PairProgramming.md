@@ -3,7 +3,7 @@
 Pair programming is a common practice in development environments where two software engineers work on a programming task together at the same computer. Review the lecture slide below to review the software engineer roles while participating in this process.
 
 
-<img src="resources/img/pair.png" width="700" height="400" />
+<img src="resources/imgs/pair.png" width="700" height="400" />
 
 ## 📝 Activity
 

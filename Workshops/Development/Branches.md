@@ -2,7 +2,7 @@
 
 _Branches_ are simply pointers to commits in git.
 
-![git-branches](https://raw.githubusercontent.com/chrisparnin/EngineeringBasics/master/resources/imgs/git-branches.png)
+![git-branches](resources/imgs/git-branches.png)
 
 More broadly, branches provide isolated development work environments that do not impact the main source code. _Merging_ is the process of combining the work from separate branches. Branches are useful for developing features, fixing bugs, organizing work, safely experimenting with the project in a contained area, or contributing to other repositories (i.e. branching is recommended as a good practice for submitting pull requests). Check out the following notebook to practice branching with git.
 
@@ -24,7 +24,7 @@ For this activity, you will work with your pair programming partner to create br
 2. Both partners should then clone the created repository and create a new branch. The branch should be named your student ID (i.e. dcbrown).
 3. Add your individual `Roman.<ext>` files to your specific branch. Push these changes to your remote repository.
 4. Locally, change back to the main branch and add your changes and push. This will probably lead to a **merge conflict**, since at least one member of your team will have an outdated version. This is a common part of merging and programming in teams.
-5. Fix or avoid the merge conflict to create a `Roman.<ext>` file with both methods created by students in _one file_ in the main branch. Additionally, add the branches.txt file to the main branch.
+5. Fix or avoid the merge conflict to create a combined `Roman.<ext>` file with both methods and comments created by students in _one file_. Push this to the main branch along with your branches.txt file.
 6. Add the instructor (chbrown13) and TA (marnaoty) to be collaborators to your repository.
 
 
