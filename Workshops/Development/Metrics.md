@@ -24,9 +24,9 @@ to count the number of lines for all of the files in the current directory. More
 
 Use one of the lines of code counting tools above to complete this activity. Submit your responses to the following questions with your Homework 3 assignment on Canvas:**
 
-7. How many total lines of source code are in the `Roman.<ext>` file for your pair programming workshop repository (_main branch_)?
-8. How many total lines of comments are in the `Roman.<ext>` file for your pair programming workshop repository (_main branch_)?
-9. How many total lines of code are in the `Roman.<ext>` file for _your branch_ of the pair programming workshop repository?
+* How many total lines of source code are in the `Roman.<ext>` file for your pair programming workshop repository (_main branch_)?
+* How many total lines of _comments_ are in the `Roman.<ext>` file for your pair programming workshop repository (_main branch_)?
+* How many total lines of code are in the `Roman.<ext>` file for _your branch_ of the pair programming workshop repository?
 
 ### 📒 Online Exercise
 
