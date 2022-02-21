@@ -97,6 +97,7 @@ To submit this assignment, **take a screenshot** of the environment test results
 > * Docable uses a docker image based on Ubuntu 20. 
 > * Pay attention to the command output: 
 >   * If you get any error about permissions, try adding `sudo`
+>   * If you see a message like `Do you want to continue? [Y/n] `, type 'y' and click Enter to continue (alternatively, use the `-y` command option)
 >   * If it says you need to update, then update!
 
 **Click on the following image to start the exercise:**

@@ -7,9 +7,11 @@ Originally, software engineers wrote program code using [punch cards](https://en
 <img src="resources/imgs/vi1.jpg" width="400" height="400" />
 <img src="resources/imgs/vi2.png" width="400" height="400" />
 
-In this activity, you will get the chance to try it out for yourself.
+In this activity, you will get the chance to try a few out for yourself.
 
-## 📒 Online Exercise: Introduction to Vi
+## 📒 Online Exercise: Introduction to IDEs
+
+**There will be _two_ screenshots to submit for this activity! Add them to your workshop repository.**
 
 <a href="https://devops.docable.cloud/dcbrown/v/620fecbf5872b78ccff4fc9a">
 <img src="resources/imgs/vi.png">
