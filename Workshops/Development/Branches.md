@@ -2,7 +2,7 @@
 
 _Branches_ are simply pointers to commits in git.
 
-![git-branches](resources/imgs/git-branches.png)
+![git-branches](resources/imgs/branch.png)
 
 More broadly, branches provide isolated development work environments that do not impact the main source code. _Merging_ is the process of combining the work from separate branches. Branches are useful for developing features, fixing bugs, organizing work, safely experimenting with the project in a contained area, or contributing to other repositories (i.e. branching is recommended as a good practice for submitting pull requests). Check out the following notebook to practice branching with git.
 
@@ -13,7 +13,7 @@ __Click below [here] to visit the test exercise. This activity will open in the 
 Use `git branch` to see the current branch and `git branch -a` to view a list of branches for the project.
 
 <a href="https://devops.docable.cloud/dcbrown/v/620eaffaa42d528cf971545e">
-<img src="resources/imgs/branch.png">
+<img src="resources/imgs/branch-preview.png">
 </a>
 
 ## 📝 Activity: Creating Branches on a Repo
