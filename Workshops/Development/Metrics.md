@@ -36,3 +36,5 @@ Click below to check out an activity working with another tool for measuring mor
 <a href="https://devops.docable.cloud/dcbrown/v/620ec3c6a42d528cf97154a5">
 <img src="resources/imgs/radon-preview.png">
 </a>
+
+Don't forget to upload your responses with your homework on Canvas and add the teaching staff to your pair programming repo!

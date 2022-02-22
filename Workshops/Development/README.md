@@ -1,14 +1,19 @@
 # Overview
 
-The development environment workshop provides hands-on experience for students to learn and practice a set of relevant tools and processes used for implementing software in industry. Please read all of the instructions for each notebook carefully for information on how to complete the assignment and details on what to submit. The first two notebooks require working with a partner. You may work with a partner for the final tasks, but work for those activities **should be completed and submitted individually**. This workshop is mostly contained in the markdown files of this directory, and uses an updated version of Docable. All Docable notebook activities will be designated wherever you see the notebook (📒). For example:
+The development environment workshop provides hands-on experience for students to learn and practice a set of relevant tools and processes used for implementing software in industry. Please read all of the instructions for each notebook carefully for information on how to complete the assignment and details on what to submit. 
+
+You may work with a partner to complete this workshop (some activities necessitate partners), *however some tasks require your work to be submitted individually!* The workshop is contained in this repository with links to activities using an updated version of Docable. All Docable activities will be designated with (📒) and normal activities with (📝). For example:
 
 ### 📒 Online Exercise
 
-__Click [here](https://devops.docable.cloud/dcbrown/v/620bcb2aa42d528cf9714fb3) to visit the test exercise. The activity will open in the same tab, so make sure to navigate back here or open in a new tab.__
+__Click on the image below to visit a test exercise with the new version of Docable. All activities will open in the same tab by default, so make sure to navigate back here or open them in a new tab.__
 
 
+<a href="https://devops.docable.cloud/dcbrown/v/620bcb2aa42d528cf9714fb3">
+<img src="resources/imgs/test-preview.png">
+</a>
 
-## [Workshop ⏭️](Overview.md)
+## Continue on to the workshop [here ⏭️](Overview.md)
 
 
 
