@@ -8,7 +8,7 @@ More broadly, branches provide isolated development work environments that do no
 
 ### 📒 Online Exercise
 
-__Click below [here] to visit the test exercise. This activity will open in the same tab, so make sure to navigate back here.__
+__Click the preview below to visit the test exercise. This activity will open in the same tab, so make sure to navigate back here.__
 
 Use `git branch` to see the current branch and `git branch -a` to view a list of branches for the project.
 
