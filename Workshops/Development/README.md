@@ -4,7 +4,7 @@ The development environment workshop provides hands-on experience for students t
 
 ### 📒 Online Exercise
 
-__Click [here](https://devops.docable.cloud/dcbrown/v/620bcb2aa42d528cf9714fb3) to visit the test exercise. The activity will open in the same tab, so make sure to navigate back here.__
+__Click [here](https://devops.docable.cloud/dcbrown/v/620bcb2aa42d528cf9714fb3) to visit the test exercise. The activity will open in the same tab, so make sure to navigate back here or open in a new tab.__
 
 
 
