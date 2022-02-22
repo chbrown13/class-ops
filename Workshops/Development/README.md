@@ -13,7 +13,9 @@ __Click on the image below to visit a test exercise with the new version of Doca
 <img src="resources/imgs/test-preview.png">
 </a>
 
-## Continue on to the workshop [here ⏭️](Overview.md)
+If you run into any issues during the workshop, please contact the instructor.
+
+## [Continue to the workshop ⏭️](Overview.md)
 
 
 

@@ -17,4 +17,6 @@ The development environment workshop consists of the following activities:
 ## **5. [Code Metrics](Metrics)**
 > An exploration of tools for calculating various analyses of your code
 
+**Due:** Friday February 25 at 11:59pm
+
 ## [Pair Programming ⏭️](PairProgramming.md)

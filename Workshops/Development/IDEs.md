@@ -11,7 +11,7 @@ In this activity, you will get the chance to try a few out for yourself.
 
 ## 📒 Online Exercise: Introduction to IDEs
 
-**There will be _two_ screenshots to submit for this activity! Add them to the main branch of your workshop repository.**
+**There will be _two_ screenshots to submit for this activity! Add them to the main branch of your workshop repository. Click on the image below to continue:**
 
 <a href="https://devops.docable.cloud/dcbrown/v/620fecbf5872b78ccff4fc9a">
 <img src="resources/imgs/vi.png">

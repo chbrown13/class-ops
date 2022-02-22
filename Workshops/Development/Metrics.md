@@ -22,7 +22,7 @@ to count the number of lines for all of the files in the current directory. More
 
 ## 📝 Activity
 
-Use one of the lines of code counting tools above to complete this activity. Submit your responses to the following questions with your Homework 3 assignment on Canvas:**
+**Use one of the lines of code counting tools above to complete this activity. Submit your responses to the following questions with your [Homework 3 assignment](https://canvas.vt.edu/courses/145256/assignments/1384321) on Canvas:**
 
 * How many total lines of source code are in the `Roman.<ext>` file for your pair programming workshop repository (_main branch_)?
 * How many total lines of _comments_ are in the `Roman.<ext>` file for your pair programming workshop repository (_main branch_)?
@@ -30,11 +30,13 @@ Use one of the lines of code counting tools above to complete this activity. Sub
 
 ### 📒 Online Exercise
 
-Click below to check out an activity working with another tool for measuring more advanced code metrics for python.
+**Click below to check out an activity working with another tool for measuring more advanced code metrics for python. Turn in your responses to the questions with HW3 on Canvas.**
 
 
 <a href="https://devops.docable.cloud/dcbrown/v/620ec3c6a42d528cf97154a5">
 <img src="resources/imgs/radon-preview.png">
 </a>
 
-Don't forget to upload your responses with your homework on Canvas and add the teaching staff to your pair programming repo!
+You completed the CS5704 Development Environments Workshop! The deliverables for this workshop include a GitHub repository (with code, two branches, a text file, and three screenshots) in addition to answers to [questions on Canvas](https://canvas.vt.edu/courses/145256/assignments/1384321) for Homework 3. If you were not able to complete the workshop in class, finish the rest for homework.
+
+**Due:** Friday February 25 at 11:59pm on GitHub and Canvas

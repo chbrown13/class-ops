@@ -92,7 +92,13 @@ Let's practice installing useful software!
 
 To submit this assignment, **take a screenshot** of the environment test results in Docable after clicking the CHECK button when this activity is completed. _Add this screenshot to the <u>main branch</u> of the PairProgramming repository from the previous activity!_
 
-> _Tips:_
+**Click on the following image to start the exercise:**
+
+<a href="https://devops.docable.cloud/chrisparnin/v/61b3ed6a7db4f2fc6edefd59">
+<img src="https://raw.githubusercontent.com/CSC-DevOps/Course/master/Content/Basics/resources/imgs/install-packages-notebook-preview.png">
+</a>
+
+> __*Tips:*__
 > * If possible, open the activity below in a new tab to reference this page.
 > * Docable uses a docker image based on Ubuntu 20. 
 > * Pay attention to the command output: 
@@ -100,12 +106,6 @@ To submit this assignment, **take a screenshot** of the environment test results
 >   * If you see a message like `Do you want to continue? [Y/n] `, type 'y' and click Enter to continue (alternatively, use the `-y` command option)
 >   * If it says you need to update, then update!
 
-**Click on the following image to start the exercise:**
-
-<a href="https://devops.docable.cloud/chrisparnin/v/61b3ed6a7db4f2fc6edefd59">
-<img src="https://raw.githubusercontent.com/CSC-DevOps/Course/master/Content/Basics/resources/imgs/install-packages-notebook-preview.png">
-</a>
-
 ## [IDEs ⏭️](IDEs.md)
 
-> The content of this notebook is primarily based on part of the [Engineering Basics](https://github.com/chrisparnin/EngineeringBasics) workshop by [Dr. Chris Parnin](https://chrisparnin.me).
+> This notebook is based on part of the [Engineering Basics](https://github.com/chrisparnin/EngineeringBasics/blob/master/setup/package-managers.md) workshop by [Dr. Chris Parnin](https://chrisparnin.me).
