@@ -11,7 +11,7 @@ The development environment workshop consists of the following activities:
 ## **3. [Package Managers](Install.md)**
 > Setting up your development environment
 
-## **4. [Integrated Development Environments](IDEs.md)
+## **4. [Integrated Development Environments](IDEs.md)**
 > An introduction to environments for writing code
 
 ## **5. [Code Metrics](Metrics)**
