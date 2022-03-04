@@ -18,10 +18,31 @@ To improve debugging for software engineers, a variety oftools have been develop
 
 ## 📒 Online Exercise: Debugging Tools
 
-Click below to access the activity in Docable. To receive credit, answer the questions within the notebook and add them to your [Homework 4 submission](https://canvas.vt.edu/courses/145256/assignments/1384322) on Canvas.
+Click below to access the workshop activities in Docable. There will be a brief tutorial for using gdb and valgrind. GDB and valgrind support a variety of programming languages (Ada, Assembly, C, C++, Fortran, Go, Rust,...), however this assignment primarily focuses on C. 
+
+**C Overview**
+You do not need in-depth knowledge of the C programming language to complete this activity, but will need to know how to compile and run programs to test your ability using tools and comprehending debugging messages. The following example is how to compile a C program in a source code file called file.c to create a program executable named file. After compiling the program, use `./file` to run the code. 
+
+```c
+gcc -Wall -std=c99 -g file.c -o file
+./file
+```
+
+### To receive credit, complete the two tutorials below. Then answer the Debugging activity questions and add your responses to the [Homework 5 submission](https://canvas.vt.edu/courses/145256/assignments/1384322) on Canvas.
+
+<a href="https://devops.docable.cloud/dcbrown/v/6214036d5872b78ccff4fea3">
+<img src="resources/imgs/gdb-preview.png">
+</a>
+
+<a href="https://devops.docable.cloud/dcbrown/v/62223149362731820848f3af">
+<img src="resources/imgs/valgrind-preview.png">
+</a>
+
+### Activity Questions
 
 
 
 [^1] [An Exploratory Study of Debugging Episodes](https://arxiv.org/pdf/2105.02162.pdf)
 
-> The content of this workshop is primarily based on a `C and Software Tools` course exercise by [Dr. David Sturgill](https://www.csc.ncsu.edu/people/dbsturgi).
+> The content of the GDB workshop is primarily based on a `C and Software Tools` course exercise by [Dr. David Sturgill](https://www.csc.ncsu.edu/people/dbsturgi).
+> The content of the valgrind workshop is primarily based on a `The Valgrind Quick Start Guide` at [CMU](https://www.cs.cmu.edu/afs/cs.cmu.edu/project/cmt-40/Nice/RuleRefinement/bin/valgrind-3.2.0/docs/html/index.html).
