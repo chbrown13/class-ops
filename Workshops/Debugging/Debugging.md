@@ -11,10 +11,6 @@ Tips for debugging:
 
 Many useful tools are available to help software engineers debug their code. 
 
-## Debugging Tools
-
-To improve debugging for software engineers, a variety oftools have been developed to support debugging activities. Most IDEs, such as [VS Code](https://code.visualstudio.com/docs/editor/debugging) and [Eclipse](https://www.eclipse.org/community/eclipse_newsletter/2017/june/article1.php), include built-in debuggers to help users find and fix errors in their code. Debuggers are useful for helping programming find bugs more effectively and efficiently compared to searching a code base manually. In the following activity, you will have the opportunity to practice working with several examples of debugging tools:
-
 
 ## 📒 Online Exercise: Debugging Tools
 
