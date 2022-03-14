@@ -1,6 +1,6 @@
 # Debugging
 
-**Debugging** is the process of finding and removing errors from code. These include _syntax errors_ where a programming language is misused (usually caught by the compiler), _logic errors_ where the code is syntactically correct but there is incorrect output, and _runtime errors_ when the program stops during execution. Research shows debugging is one of the most time-consuming activities for developers and one of the most expensive processes of software engineering.[^1]
+**Debugging** is the process of finding and removing errors from code. These include _syntax errors_ where a programming language is misused (usually caught by the compiler), _logic errors_ where the code is syntactically correct but there is incorrect output, and _runtime errors_ when the program stops during execution. Research shows debugging is one of the most time-consuming activities for developers and one of the most expensive processes of software engineering[^1].
 
 Tips for debugging:
 - Do not make random or extensive changes to the program! Instead, examine the code to figure out what went wrong.
@@ -41,7 +41,7 @@ gcc -Wall -std=c99 -g file.c -o file
 ### Activity Questions
 
 <a href="https://devops.docable.cloud/dcbrown/v/62228104362731820848f3f6">
-<img src="resources/imgs/debug.jpg" width="400" height="400" />
+<img src="resources/imgs/debug.jpg" width="375" height="300" />
 </a>
 
 ### 📝 Upload your reponses on Canvas. Due: Friday, March 11 at 11:59pm
