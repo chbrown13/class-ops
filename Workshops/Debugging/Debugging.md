@@ -40,9 +40,13 @@ gcc -Wall -std=c99 -g file.c -o file
 
 ### Activity Questions
 
+<a href="https://devops.docable.cloud/dcbrown/v/62228104362731820848f3f6">
+<img src="resources/imgs/vi2.png" width="400" height="400" />
+</a>
 
+### 📝 Upload your reponses on Canvas. Due: Friday, March 11 at 11:59pm
 
-[^1] [An Exploratory Study of Debugging Episodes](https://arxiv.org/pdf/2105.02162.pdf)
+> [^1] [An Exploratory Study of Debugging Episodes](https://arxiv.org/pdf/2105.02162.pdf)
 
-> The content of the GDB workshop is primarily based on a `C and Software Tools` course exercise by [Dr. David Sturgill](https://www.csc.ncsu.edu/people/dbsturgi).
-> The content of the valgrind workshop is primarily based on a `The Valgrind Quick Start Guide` at [CMU](https://www.cs.cmu.edu/afs/cs.cmu.edu/project/cmt-40/Nice/RuleRefinement/bin/valgrind-3.2.0/docs/html/index.html).
+> * The content of the GDB workshop is primarily based on a `C and Software Tools` course exercise by [Dr. David Sturgill](https://www.csc.ncsu.edu/people/dbsturgi).
+> * The content of the valgrind workshop is primarily based on a `The Valgrind Quick Start Guide` at [CMU](https://www.cs.cmu.edu/afs/cs.cmu.edu/project/cmt-40/Nice/RuleRefinement/bin/valgrind-3.2.0/docs/html/index.html).
