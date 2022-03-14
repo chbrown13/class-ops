@@ -41,7 +41,7 @@ gcc -Wall -std=c99 -g file.c -o file
 ### Activity Questions
 
 <a href="https://devops.docable.cloud/dcbrown/v/62228104362731820848f3f6">
-<img src="resources/imgs/debug.png" width="400" height="400" />
+<img src="resources/imgs/debug.jpg" width="400" height="400" />
 </a>
 
 ### 📝 Upload your reponses on Canvas. Due: Friday, March 11 at 11:59pm
